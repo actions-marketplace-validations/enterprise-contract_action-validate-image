@@ -1,5 +1,5 @@
 name: EC Validate
-description: GitHub Action developed by Enterprise Contract, designed to assess container images for security & compliance.
+description: GitHub Action developed by Conforma (formerly Enterprise Contract), designed to assess container images for security & compliance.
 branding:
   icon: 'shield'
   color: 'purple'
@@ -33,7 +33,7 @@ runs:
 
   steps:
     - name: Run EC Validate
-      uses: docker://quay.io/hacbs-contract/ec-cli:snapshot@sha256:6cbf27a51d641c3bce25cdaf05af179569e9a03b9c92980c6be1f825073006c4
+      uses: docker://quay.io/conforma/cli:snapshot@sha256:51bdd2b3f11a3ebe6514fdb03a4384a17fcd616d2ff77952437d5ba993a9ad5b
       id: ec_validate
       continue-on-error: true
       with:
